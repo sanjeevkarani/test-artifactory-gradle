@@ -1,0 +1,9 @@
+repositories {
+    jcenter()
+}
+
+dependencies {
+    localGroovy()
+    compile('org.jfrog.buildinfo:build-info-extractor-gradle:4.7.5') { exclude module: 'groovy-all' }
+//    compile ('org.jfrog.buildinfo:build-info-extractor-gradle:4.4.5') { exclude module: 'groovy-all'}
+}

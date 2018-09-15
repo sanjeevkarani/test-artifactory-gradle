@@ -1,0 +1,21 @@
+// From buildSrc
+apply plugin: plugins.JavaConventions
+apply plugin: plugins.JarConventions
+
+description = "Canary Java Library"
+group = 'com.mutualofomaha.dci'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.mutualofomaha.dci.Canary'
+    }
+}
+
+dependencies {
+    compile 'joda-time:joda-time:2.10'
+
+    testCompile 'junit:junit:4.12'
+}
