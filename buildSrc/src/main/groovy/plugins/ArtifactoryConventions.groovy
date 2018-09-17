@@ -44,7 +44,7 @@ public class ArtifactoryConventions implements Plugin<Project> {
                     logger.info("Setting build number from environment")
                     def buildNumber = System.env["BUILD_TIMESTAMP"]
                     if (buildNumber) {
-//                        clientConfig.info.setBuildNumber(buildNumber)
+                        clientConfig.info.setBuildNumber(buildNumber)
                     }
                 }
             }
