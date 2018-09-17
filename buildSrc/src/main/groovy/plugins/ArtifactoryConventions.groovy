@@ -27,7 +27,7 @@ public class ArtifactoryConventions implements Plugin<Project> {
             }
 
             artifactory {
-                contextUrl = "https://repocat.mutualofomaha.com/artifactory"
+                contextUrl = "http://10.6.17.232/artifactory"
                 publish {
                     repository {
                         repoKey = publishRepo
