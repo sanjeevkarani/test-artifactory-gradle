@@ -1,6 +1,7 @@
 // From buildSrc
 apply plugin: plugins.JavaConventions
 apply plugin: plugins.JarConventions
+apply plugin: 'java'
 
 description = "Canary Java Library"
 group = 'com.mutualofomaha.dci'
@@ -18,4 +19,8 @@ dependencies {
     compile 'joda-time:joda-time:2.10'
 
     testCompile 'junit:junit:4.12'
+}
+
+jar.doLast { task ->
+    ant.checksum file: task.archivePath
 }
