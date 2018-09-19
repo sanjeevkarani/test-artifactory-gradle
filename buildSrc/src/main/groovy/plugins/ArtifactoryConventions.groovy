@@ -15,7 +15,7 @@ public class ArtifactoryConventions implements Plugin<Project> {
             if (project.hasProperty('ARTIFACTORY_REPO')) {
                 publishRepo = ARTIFACTORY_REPO
             } else {
-                publishRepo = "libs-snapshot-local"
+                publishRepo = "gradle-dev-local"
             }
 
             publishing {
@@ -30,7 +30,7 @@ public class ArtifactoryConventions implements Plugin<Project> {
                 contextUrl = "http://10.6.17.232/artifactory"
                 publish {
                     repository {
-                        repoKey = "libs-snapshot-local"
+                        repoKey = "gradle-dev-local"
                         maven = true
                         username = 'admin'
                         password = 'password'
