@@ -1,0 +1,10 @@
+version: 1
+type: gradle
+useWrapper: true
+resolver:
+  repo: gradle-release
+  serverID: k8s-server
+deployer:
+  repo: gradle-dev-local
+  serverID: k8s-server
+  deployMavenDescriptors: true

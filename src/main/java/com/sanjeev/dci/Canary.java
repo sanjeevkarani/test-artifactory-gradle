@@ -1,4 +1,4 @@
-package com.mutualofomaha.dci;
+package com.sanjeev.dci;
 
 public class Canary {
 

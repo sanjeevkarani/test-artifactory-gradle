@@ -40,7 +40,7 @@ public class JarConventions implements Plugin<Project> {
             }
 
             artifactoryPublish {
-                properties = ['artifactory.licenses': 'Mutual-of-Omaha-Proprietary']
+                properties = ['artifactory.licenses': 'Sanjeev-Proprietary']
             }
         }
     }

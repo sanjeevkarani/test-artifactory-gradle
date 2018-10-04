@@ -1,4 +1,4 @@
-package com.mutualofomaha.dci;
+package com.sanjeev.dci;
 
 import org.junit.Test;
 

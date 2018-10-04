@@ -38,6 +38,14 @@ public class ArtifactoryConventions implements Plugin<Project> {
                     defaults {
                         publications('mavenJava')
                     }
+		    //resolve {
+        		//repository {
+            		//repoKey = 'gradle-release'
+   	         	//username = "admin"
+            		//password = "password"
+            		//maven = true            
+        		//}
+   		    //}
                 }
 
                 afterEvaluate {
