@@ -16,6 +16,6 @@ steps:
 - task: ArtifactoryDocker@1
   inputs:
     command: 'pull'
-    artifactoryService: 'supportusw'
+    artifactoryService: 'Support'
     sourceRepo: 'docker-remote'
     imageName: 'nginx'
