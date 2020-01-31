@@ -1,5 +1,7 @@
 resources:
   containers:
+  - container: my_container
+    image: ubuntu:16.04
   - container: nginx
     image: nginx
 pool:
