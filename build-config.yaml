@@ -1,12 +1,9 @@
 resources:
   containers:
-  - container: my_container
-    image: ubuntu:16.04
   - container: nginx
     image: nginx
 pool:
   vmImage: 'ubuntu-16.04'
-container: my_container
 services:
   nginx: nginx
 steps:
