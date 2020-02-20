@@ -5,6 +5,10 @@
 
 trigger:
 - master
+resources:
+  containers:
+  - container: nginx
+    image: nginx
 
 pool:
   vmImage: 'ubuntu-16.04'
