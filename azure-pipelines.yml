@@ -9,9 +9,8 @@ trigger:
 pool:
   vmImage: 'ubuntu-16.04'
 
-container: nginx
 services:
-  nginx: nginx
+  nginx: 'supportusw-docker.jfrog.io/nginx:1.10.0'
 
 steps:
 - task: JFrog.jfrog-artifactory-vsts-extension.artifactory-docker.ArtifactoryDocker@1
